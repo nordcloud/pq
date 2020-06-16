@@ -7,7 +7,7 @@ using this package directly. For example:
 	import (
 		"database/sql"
 
-		_ "github.com/lib/pq"
+		_ "github.com/nordcloud/pq"
 	)
 
 	func main() {
@@ -241,7 +241,7 @@ for more information).  Note that the channel name will be truncated to 63
 bytes by the PostgreSQL server.
 
 You can find a complete, working example of Listener usage at
-https://godoc.org/github.com/lib/pq/example/listen.
+https://godoc.org/github.com/nordcloud/pq/example/listen.
 
 
 Kerberos Support
@@ -250,7 +250,7 @@ Kerberos Support
 If you need support for Kerberos authentication, add the following to your main
 package:
 
-	import "github.com/lib/pq/auth/kerberos"
+	import "github.com/nordcloud/pq/auth/kerberos"
 
 	func init() {
 		pq.RegisterGSSProvider(func() (pq.Gss, error) { return kerberos.NewGSS() })
