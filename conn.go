@@ -49,7 +49,7 @@ func (d *Driver) Open(name string) (driver.Conn, error) {
 }
 
 func init() {
-	sql.Register("postgres", &Driver{})
+	sql.Register("postgresnc", &Driver{})
 }
 
 type parameterStatus struct {
